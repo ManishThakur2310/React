@@ -1,0 +1,16 @@
+.input-first-errors{
+  border: 1px solid red;
+}
+.input-middle-errors{
+  border: 1px solid red;
+}
+.input-last-errors{
+  border: 1px solid red;
+}
+.input-error-fullname{
+  border: 1px solid red;
+}
+
+.error-class{
+  color: red;
+}
