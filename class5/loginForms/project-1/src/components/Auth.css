@@ -1,0 +1,160 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  background: linear-gradient(135deg, #0c67a0, #1e3c72);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/* Card */
+.form-container {
+  background: #fff;
+  padding: 30px 35px;
+  border-radius: 15px;
+  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 360px;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Toggle buttons */
+.form-toggle {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.form-toggle button {
+  width: 50%;
+  padding: 12px;
+  background-color: #f3f3f3;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 10px 10px 0 0;
+  transition: background 0.3s ease;
+}
+
+.form-toggle button:hover {
+  background: #ddd;
+}
+
+.form-toggle .active {
+  background: #033452;
+  color: white;
+}
+
+/* Form content */
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #033452;
+  font-weight: 700;
+}
+
+/* Inputs */
+.form-group {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form input {
+  padding: 12px;
+  border: 1.5px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form input:focus {
+  outline: none;
+  border-color: #0c67a0;
+  box-shadow: 0px 0px 6px rgba(12, 103, 160, 0.5);
+}
+
+.input-error {
+  border-color: #ff4b5c !important;
+  background: rgba(255, 75, 92, 0.1);
+}
+
+.error-message {
+  color: #ff4b5c;
+  font-size: 13px;
+  margin-top: 4px;
+  font-style: italic;
+}
+
+/* Links */
+.forgot-link {
+  font-size: 13px;
+  color: #0c67a0;
+  text-decoration: none;
+  margin-bottom: 15px;
+  text-align: right;
+}
+
+.forgot-link:hover {
+  text-decoration: underline;
+}
+
+/* Button */
+.form button {
+  padding: 12px;
+  background-color: #033452;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.form button:hover {
+  background-color: #055280;
+  transform: translateY(-2px);
+}
+
+.form p {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.form p a {
+  color: #0c67a0;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.form p a:hover {
+  text-decoration: underline;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
